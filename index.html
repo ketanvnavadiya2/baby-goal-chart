@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Goal Chart</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background: #e4f0f5;
+            color: #444;
+            font-size: 16px;
+            padding: 40px;
+        }
+
+        /* Container for the chart */
+        .goal-chart-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        table th {
+            background-color: #5b9bd5;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            vertical-align: top;
+        }
+
+        table tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        /* Hover Effect for Rows */
+        table tr:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Style */
+        .photo-column img {
+            width: 100%;
+            height: auto;
+            /* border-radius: 10px; */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        /* Image Hover Effect */
+        .photo-column img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Column Widths */
+        .quality-column {
+            width: 25%;
+        }
+
+        .who-column {
+            width: 25%;
+        }
+
+        .action-column {
+            width: 30%;
+        }
+
+        .photo-column {
+            width: 20%;
+        }
+
+        /* Footer Section */
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .footer a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            /* Ensures the image gets cropped */
+            border: 1px solid #000;
+            /* Optional: Adds a border around the container */
+        }
+
+        /* Image styling */
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Prevents the image from stretching to fit the container */
+            object-position: center;
+            /* Default position: center the image */
+        }
+
+        /* Example to demonstrate changing position */
+        .image-container .image {
+            object-position: 100% 100%;
+            /* Change this value to control the positioning of the image */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="goal-chart-container">
+        <h1>My Divine Baby's Goal Chart</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="quality-column">Quality</th>
+                    <th class="who-column">Who Has That Quality</th>
+                    <th class="action-column">What I Will Do to Achieve It</th>
+                    <th class="photo-column">Related Photo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="quality-column">Shuddha Sattva Guni</td>
+                    <td class="who-column">Jad Bharat</td>
+                    <td class="action-column">
+                        - Always trying to stay in krishna consciousness.
+                        <br>
+                        - Pursue a Life of simplicity
+                        <br>
+                        - Practice surrender to the divine
+                        <br>
+                        - Cultivate humility and self-inquiry
+                        <br>
+                        - Embrace detachment and renunciation
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="jadbharta.jpg" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Spiritual</td>
+                    <td class="who-column">Maiya</td>
+                    <td class="action-column">
+                        - Read srimad bhagavatam and read shrimad bhagwat geeta
+                        <br>
+                        - Attending japa talk
+                        <br>
+                        - Read Ramayan and Mahabharat
+                        <br>
+                        - Chanting hare krishna mahamantra
+                        <br>
+                        - Attending srimad bhagwat katha
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="Maiya.jpeg" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Powerful</td>
+                    <td class="who-column">Pita shree</td>
+                    <td class="action-column">
+                        - Make impossible to possible
+                        <br>
+                        - Self independent
+                        <br>
+                        - Critical thinking
+                        <br>
+                        - Health and fitness
+                        <br>
+                        - Convincing skills
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="Pitashree.jpeg" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Danveer</td>
+                    <td class="who-column">Kunti putra karna</td>
+                    <td class="action-column">
+                        - Cow feeding
+                        <br>
+                        - Help to needy people
+                        <br>
+                        - Live with honor and uphold my word
+                        <br>
+                        - Accept the complexity of Life
+                        <br>
+                        - Be true to yourself
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="Karna.webp" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Satyavadi</td>
+                    <td class="who-column">Raja Harishchandra</td>
+                    <td class="action-column">
+                        - Commit to truth (satya)
+                        <br>
+                        - Uphold justice (nyaya)
+                        <br>
+                        - Practice self-sacrifice
+                        <br>
+                        - Accept responsibility and consequences
+                        <br>
+                        - Be devoted to dharma
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="123.jpg" alt="Image" class="image" style="width: 144%">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Creative</td>
+                    <td class="who-column">Elon Musk</td>
+                    <td class="action-column">
+                        - Puzzle games
+                        <br>
+                        - Vedic maths
+                        <br>
+                        - Sudoku game, Chess
+                        <br>
+                        - Coding, programming, software development
+                        <br>
+                        - Focus on innovation and engineering
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="elon.jpg" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Leadership</td>
+                    <td class="who-column">Sardar Vallabhbhai Patel</td>
+                    <td class="action-column">
+                        - Build strong character and integrity
+                        <br>
+                        - Work hard and be resilient
+                        <br>
+                        - Master the art of decision-making
+                        <br>
+                        - Be a problem solver and strategist
+                        <br>
+                        - Empower others and build strong teams
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="Sardar.avif" alt="Image" class="image" style="width: 152%">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Maryada Purushottam</td>
+                    <td class="who-column">Shree Ram, Sree Lakshman, Sita Mata</td>
+                    <td class="action-column">
+                        - Respect for parents and elders
+                        <br>
+                        - Adherence to dharma (righteousness)
+                        <br>
+                        - Selfless service and sacrifice
+                        <br>
+                        - Truthfulness (satya)
+                        <br>
+                        - Humility and simplicity
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container" style="object-position: -67px 100%;">
+                            <img src="ram.jpeg" alt="Image" class="image"
+                                style="width: 150%; object-position: -67px 100%;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">Honesty</td>
+                    <td class="who-column">Maiya</td>
+                    <td class="action-column">
+                        - Be honest and transparent in my own communication
+                        <br>
+                        - Praise them when they tell the truth, even if it’s difficult or uncomfortable
+                        <br>
+                        - Share stories or examples of the importance of honesty in real-life situations
+                        <br>
+                        - Good genetics
+                        <br>
+                        - Praise truthful behavior
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="Maiya.jpeg" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="quality-column">kindness</td>
+                    <td class="who-column">Bhakt Prahlad</td>
+                    <td class="action-column">
+                        - Encourage selflessness
+                        <br>
+                        - Stories of devotees
+                        <br>
+                        - Instill a sense of fearlessness
+                        <br>
+                        - Love for nature and creation
+                        <br>
+                        - Create a positive environment
+                    </td>
+                    <td class="photo-column">
+                        <div class="image-container">
+                            <img src="123.webp" alt="Image" class="image">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>&copy; 2024 Baby's Goal Chart. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
